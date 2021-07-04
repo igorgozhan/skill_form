@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Заголовок</title>
+<meta name="description" content="">
+@@include('_html_inc/page_head.html')
+</head>
+<body>
+<div class="content">
+	@@include('_html_inc/page_header.html')
+	<div class="form_area">
+		<div class="wraper">
+			<h1 placeholder>Анкета</h1>
+			<img src="img/pasport.svg" class="icon"/>
+			<h2 id="own">Личная информация</h2>
+			<div class="form_block">
+				<input class="fe" id="name_inp" value="Гожан Игорь Николаевич"/><span for="name_inp" class="ph" placeholder="ФИО"></span>
+				<div class="select_block">
+					<input class="fe year year_input" id="year_inp" value="1980" readonly/><span for="year_inp" class="ph year" placeholder="Год рождения"></span>
+					<div class="select_block_pop">
+						<div class="select_block_pop_content" id="select_block_content">
+						</div>
+					</div>
+				</div>
+				<input class="fe" id="place_inp" value="Краснодар"/><span for="place_inp" class="ph" placeholder="Место проживания"></span>
+				<input class="fe" id="skype_inp" value="igorgozhan"/><span for="skype_inp" class="ph" placeholder="Skype"></span>
+				<input class="fe" id="email_inp" value="igorgozhan@gmail.com"/><span for="email_inp" class="ph" placeholder="E-mail"></span>
+			</div>
+			
+			<img src="img/checks.svg" class="icon"/>
+			<h2 id="skill">Расскажите о&nbsp;своём опыте</h2>
+			
+			<div class="skills_block">
+				<div>
+					<div class="check-element"><input type="checkbox" name="ch1" id="ch1" checked="checked"><label for="ch1" class="checkbox">БЭМ/OOCSS</label></div>
+					<div class="check-element"><input type="checkbox" name="ch2" id="ch2" checked="checked"><label for="ch2" class="checkbox">Stylus/LESS/SASS</label></div>
+					<div class="check-element"><input type="checkbox" name="ch3" id="ch3" checked="checked"><label for="ch3" class="checkbox">Работаю с&nbsp;SVG</label></div>
+				</div>
+				<div>
+					<div class="check-element"><input type="checkbox" name="ch4" id="ch4" checked="checked"><label for="ch4" class="checkbox">Верстаю&nbsp;семантично</label></div>
+					<div class="check-element"><input type="checkbox" name="ch5" id="ch5" checked="checked"><label for="ch5" class="checkbox">ES2015/ES2016</label></div>
+					<div class="check-element"><input type="checkbox" name="ch6" id="ch6" checked="checked"><label for="ch6" class="checkbox">Gulp/GRUNT</label></div>
+				</div>
+				<div>
+					<div class="check-element"><input type="checkbox" name="ch7" id="ch7" checked="checked"><label for="ch7" class="checkbox">Webpack</label></div>
+					<div class="check-element"><input type="checkbox" name="ch8" id="ch8" checked="checked"><label for="ch8" class="checkbox">jQuery</label></div>
+					<div class="check-element"><input type="checkbox" name="ch9" id="ch9" checked="checked"><label for="ch9" class="checkbox">Ипользую Git</label></div>
+				</div>
+			</div>
+			
+			<img src="img/js.svg" class="icon"/>
+			<h2 id="js">Уровень владения JavaScript</h2>
+			<div class="axis_block">
+				<div class="skillRagecontainer_axis">
+					<div class="axis_name"><div><span>Не&nbsp;владею</span></div></div>
+					<div class="axis_name"><div><span>Использую готовые<br/>решения</span></div></div>
+					<div class="axis_name">
+						<div class="axis_name_last"><span>Пишу сложный JS&nbsp;с&nbsp;нуля</span></div>
+						<div><span>Использую готовые решения<br/>и&nbsp;умею переделывать</span></div>
+					</div>
+					<div><div class="axis_name_dots"></div></div>
+					<div><div class="axis_name_dots axis_name_dots_2nd"></div></div>
+					<div>
+						<div class="axis_name_dots axis_name_dots_last"></div>
+						<div class="axis_name_dots axis_name_dots_3rd"></div>
+					</div>
+				</div>
+			</div>
+			<div class="skillRagecontainer">
+				<div class="skillRagecontainer_diag"></div>
+				<div class="skillRagecontainer_grey" id="greyBlock"></div>				
+				<input type="range" min="0" max="100" value="80" class="skill_slider" id="skillRange">
+			</div>
+
+			<img src="img/about.svg" class="icon"/>
+			<h2 id="about">Расскажите о&nbsp;себе</h2>
+			<div class="about_block">
+				<p class="about_teaser">Напишите несколько предложений, чем привлекла наша вакансия и&nbsp;что вы ожидаете от&nbsp;работы у&nbsp;нас.</p>
+				<textarea class="fe" rows="5" id="about_inp">Ожидаю от работы у вас интересных незаурядных проектов. Привлекла возможность помочь миру стать немного лучше.</textarea><span for="about_inp" class="ph" placeholder="Понравилась тем, что..."></span>
+				<div class="btn">Готово</div>
+			</div>
+
+
+		</div>
+	</div>
+	
+	
+</div>
+@@include('_html_inc/page_footer.html')
+@@include('_html_inc/page_bottom.html')
+</body>
+</html>
